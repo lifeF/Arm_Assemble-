@@ -22,12 +22,7 @@ main:
 	
 	BHS printthis
 	B printthis2 
-	
-
-	
-
-	
-	
+		
 	@ ---------------------
 printthis:
 	@ load aguments and print
@@ -43,11 +38,6 @@ printthis2:
 	mov r1, r5
 	bl printf
 	
-	
-
-
-
-
 exit:@ stack handling (pop lr from the stack) and return
 	 ldr lr, [sp, #0]
 	 add sp, sp, #4
